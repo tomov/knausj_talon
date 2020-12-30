@@ -1,5 +1,5 @@
-tag: terminal
-and tag: user.git
+#tag: terminal
+#and tag: user.git
 -
 # Standard commands
 git add patch: "git add . -p\n"
@@ -11,7 +11,7 @@ git branch: "git branch "
 git remote branches: "git branch --remote\n"
 git branch <user.text>: "git branch {text}"
 git checkout: "git checkout "
-git checkout master: "git checkout master\n"
+git checkout master: "git checkout master "
 git checkout main: "git checkout main\n"
 git checkout <user.text>: "git checkout {text}"
 git cherry pick: "git cherry-pick "
@@ -22,7 +22,9 @@ git clone: "git clone "
 # Leave \n out for confirmation since the operation is destructive
 git clean everything: "git clean -dfx"
 git commit message <user.text>: "git commit -m '{text}'"
-git commit: "git commit\n"
+#git commit: "git commit\n"
+git commit all: "git commit -a"
+git commit amend: "git commit -a --amend"
 git diff (colour|color) words: "git diff --color-words "
 git diff: "git diff "
 git diff cached: "git diff --cached\n"
@@ -43,14 +45,17 @@ git pull origin: "git pull origin "
 git pull rebase: "git pull --rebase\n"
 git pull fast forward: "git pull --ff-only\n"
 git pull <user.text>: "git pull {text} "
-git push: "git push\n"
+git push: "git push"
+git push force: "git push -f"
 git push origin: "git push origin "
 git push up stream origin: "git push -u origin"
 git push <user.text>: "git push {text} "
 git push tags: "git push --tags\n"
-git rebase: "git rebase\n"
+git rebase: "git rebase "
 git rebase continue: "git rebase --continue"
+git rebase abort: "git rebase --abort"
 git rebase skip: "git rebase --skip"
+git rebase onto: "git rebase --onto "
 git remove: "git rm "
 git (remove|delete) branch: "git branch -d "
 git (remove|delete) remote branch: "git push --delete origin "
@@ -68,7 +73,7 @@ git remote show origin: "git remote show origin\n"
 git show: "git show "
 git stash pop: "git stash pop\n"
 git stash: "git stash\n"
-git stash apply: "git stash apply\n"
+git stash apply: "git stash apply"
 git stash list: "git stash list\n"
 git stash show: "git stash show"
 git status: "git status\n"
@@ -81,6 +86,9 @@ git (switch create | new branch) [<user.text>]:
 git switch orphan: "git switch --orphan "
 git submodule add:  "git submodule add "
 git tag: "git tag "
+git grep: 
+    insert("git grep ''")
+    key(left)
 
 # Convenience
 git edit config: "git config --local -e\n"
