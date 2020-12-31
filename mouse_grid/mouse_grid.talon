@@ -3,6 +3,9 @@ tag: user.mouse_grid_enabled
 M grid:
     user.grid_activate()
 
+mouse grid:
+    user.grid_activate()
+
 grid win:
     user.grid_place_window()
     user.grid_activate()

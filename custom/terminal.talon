@@ -13,6 +13,7 @@ grep:
     key(left)
 make dear: "mkdir "
 move: "mv "
+remove: "rm "
 
 # this is for vim, I can't get vim.talon to work
 save: ":w\n"

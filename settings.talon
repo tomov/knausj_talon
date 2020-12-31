@@ -22,4 +22,6 @@ settings():
     user.mouse_wheel_down_amount = 120
 	
 # uncomment tag to enable mouse grid
-# tag(): user.mouse_grid_enabled
+tag(): user.mouse_grid_enabled
+
+#speech.record_all = 1

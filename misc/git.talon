@@ -6,7 +6,7 @@ git add patch: "git add . -p\n"
 git add: "git add "
 git add everything: "git add -u\n"
 git bisect: "git bisect "
-git blame: "git alame "
+git blame: "git blame "
 git branch: "git branch "
 git remote branches: "git branch --remote\n"
 git branch <user.text>: "git branch {text}"
@@ -16,7 +16,8 @@ git checkout <user.text>: "git checkout {text}"
 git cherry pick: "git cherry-pick "
 git clone: "git clone "
 git commit message <user.text>: "git commit -m '{text}'"
-git commit: "git commit\n"
+#git commit: "git commit\n"
+git commit all: "git commit -a\n"
 git diff (colour|color) words: "git diff --color-words "
 git diff: "git diff "
 git diff cached: "git diff --cached\n"
@@ -64,6 +65,9 @@ git stash show: "git stash show"
 git status: "git status\n"
 git submodule add:  "git submodule add "
 git tag: "git tag "
+git grep: 
+    insert("git grep ''")
+    key(left)
 
 # Convenience
 git edit config: "git config --local -e\n"
