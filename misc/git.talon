@@ -22,7 +22,8 @@ git clone: "git clone "
 # Leave \n out for confirmation since the operation is destructive
 git clean everything: "git clean -dfx"
 git commit message <user.text>: "git commit -m '{text}'"
-git commit: "git commit\n"
+#git commit: "git commit\n"
+git commit all: "git commit -a\n"
 git diff (colour|color) words: "git diff --color-words "
 git diff: "git diff "
 git diff cached: "git diff --cached\n"
@@ -48,7 +49,7 @@ git push origin: "git push origin "
 git push up stream origin: "git push -u origin"
 git push <user.text>: "git push {text} "
 git push tags: "git push --tags\n"
-git rebase: "git rebase\n"
+git rebase: "git rebase "
 git rebase continue: "git rebase --continue"
 git rebase skip: "git rebase --skip"
 git remove: "git rm "
@@ -81,6 +82,9 @@ git (switch create | new branch) [<user.text>]:
 git switch orphan: "git switch --orphan "
 git submodule add:  "git submodule add "
 git tag: "git tag "
+git grep: 
+    insert("git grep ''")
+    key(left)
 
 # Convenience
 git edit config: "git config --local -e\n"
