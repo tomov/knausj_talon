@@ -1,7 +1,8 @@
 os: linux
-tag: terminal
+app: terminal
 -
 tag(): user.file_manager
+tag(): terminal 
 #todo: generic tab commands
 #tag(): tabs
 action(edit.page_down):

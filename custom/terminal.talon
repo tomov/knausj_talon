@@ -1,5 +1,6 @@
-tag: terminal
--
+#tag: terminal
+#
+#-
 vim: "vim "
 list: "ls\n"
 list latch: "ls -latch\n"
