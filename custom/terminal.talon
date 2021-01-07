@@ -16,6 +16,7 @@ move: "mv "
 remove: "rm "
 
 # this is for vim, I can't get vim.talon to work
-save: ":w\n"
-quit: ":q\n"
-save quit: ":wq\n"
+new: "$a\n" 
+vim save: ":w\n"
+vim quit: ":q\n"
+[vim] save quit: ":wq\n"
