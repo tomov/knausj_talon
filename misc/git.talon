@@ -1,5 +1,5 @@
-tag: terminal
-and tag: user.git
+#tag: terminal
+#and tag: user.git
 -
 # Standard commands
 git add patch: "git add . -p\n"
@@ -17,7 +17,7 @@ git cherry pick: "git cherry-pick "
 git clone: "git clone "
 git commit message <user.text>: "git commit -m '{text}'"
 #git commit: "git commit\n"
-git commit all: "git commit -a\n"
+git commit all: "git commit -a"
 git diff (colour|color) words: "git diff --color-words "
 git diff: "git diff "
 git diff cached: "git diff --cached\n"
@@ -38,12 +38,12 @@ git pull origin: "git pull origin "
 git pull rebase: "git pull --rebase\n"
 git pull fast forward: "git pull --ff-only\n"
 git pull <user.text>: "git pull {text} "
-git push: "git push\n"
+git push: "git push"
 git push origin: "git push origin "
 git push up stream origin: "git push -u origin"
 git push <user.text>: "git push {text} "
 git push tags: "git push --tags\n"
-git rebase: "git rebase\n"
+git rebase: "git rebase "
 git rebase continue: "git rebase --continue"
 git rebase skip: "git rebase --skip"
 git remove: "git rm "

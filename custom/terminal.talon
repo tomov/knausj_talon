@@ -1,4 +1,4 @@
-tag: terminal
+#tag: terminal
 -
 vim: "vim "
 list: "ls\n"
@@ -14,9 +14,18 @@ grep:
 make dear: "mkdir "
 move: "mv "
 remove: "rm "
+copy: "cp "
+git revert: "git revert "
 
 # this is for vim, I can't get vim.talon to work
 new: "$a\n" 
 vim save: ":w\n"
 vim quit: ":q\n"
 [vim] save quit: ":wq\n"
+
+
+pit dot:
+    key(pgdown)
+search everywhere:
+    key(shift)
+    key(shift)

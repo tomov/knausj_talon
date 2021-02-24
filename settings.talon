@@ -24,4 +24,4 @@ settings():
 # uncomment tag to enable mouse grid
 tag(): user.mouse_grid_enabled
 
-#speech.record_all = 1
+speech.record_all = 1
