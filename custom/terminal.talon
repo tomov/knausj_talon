@@ -1,4 +1,5 @@
 #tag: terminal
+#
 -
 vim: "vim "
 list: "ls\n"
@@ -29,3 +30,7 @@ pit dot:
 search everywhere:
     key(shift)
     key(shift)
+
+settings():
+    speech.timeout = 0.150
+
