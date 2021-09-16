@@ -1,8 +1,13 @@
-#tag: terminal
-#
-#
+app: terminal
+app: gnome-terminal
 -
+copy file: "cp "
+copy: key(ctrl-shift-c)
+paste: key(ctrl-shift-v)
+
+
 vim: "vim "
+them: "vim "
 list: "ls\n"
 list latch: "ls -latch"
 print directory: "pwd\n"
@@ -16,15 +21,8 @@ grep:
 make dear: "mkdir "
 move: "mv "
 remove: "rm "
-copy: "cp "
 remove directory: "rmdir "
 git revert: "git revert "
-
-# this is for vim, I can't get vim.talon to work
-new: "$a\n" 
-vim save: ":w\n"
-vim quit: ":q\n"
-[vim] save quit: ":wq\n"
 
 conda environment list: "conda env list\n"
 conda activate: "conda activate "
@@ -35,14 +33,19 @@ conda remove: "conda remove "
 pip install: "pip install "
 pip uninstall: "pip uninstall "
 python: "python "
+basil: "bazel "
+basil run: "bazel run "
+sudo: "sudo "
+dear: "dir"
+#num pie: "numpy"
+num pie: "np"
+jupiter notebook: "jupyter notebook\n"
+nose tests: "nosetests "
+kill all dash nine: "killall -9 "
 
-pit dot:
-    key(pgdown)
-search everywhere:
-    key(shift)
-    key(shift)
+# this is for vim, I can't get vim.talon to work
+new: "$a\n" 
+vim save: ":w\n"
+vim quit: ":q\n"
+[vim] save quit: ":wq\n"
 
-settings():
-    speech.timeout = 0.150
-#insert_wait = 0
-#    key_wait = 20
