@@ -9,9 +9,10 @@ paste: key(ctrl-shift-v)
 vim: "vim "
 them: "vim "
 list: "ls "
-list latch: "ls -latch"
+list latch: "ls -latch "
 print directory: "pwd\n"
 tea mux: "tmux"
+tea mux attach: "tmux a\n"
 change dear: "cd "
 go home: "cd ~\n"
 daddy: "cd ..\n"
@@ -29,6 +30,7 @@ conda activate <user.text>: "conda activate {text}"
 conda deactivate: "conda deactivate\n"
 conda create: "conda create "
 conda remove: "conda remove "
+conda list: "conda list"
 
 pip install: "pip install "
 pip uninstall: "pip uninstall "
@@ -45,6 +47,7 @@ jupiter notebook: "jupyter notebook\n"
 conan install: "conan install "
 nose tests: "nosetests "
 kill all dash nine: "killall -9 "
+kill dash nine: "kill -9 "
 find name:
     "find . -name ''"
     key(left)
@@ -61,12 +64,16 @@ watch: "watch "
 bash ar see: "~/.bashrc"
 tail dash fine: "tail -f "
 slurm: "slurm"
+diff: "diff "
+pee es oaks: 
+    "ps aux | grep ''"
+    key(left)
 
 
 # this is for vim, I can't get vim.talon to work
 vim save: ":w\n"
 vim quit: ":q\n"
-[vim] save quit: ":wq\n"
+save quit: ":wq\n"
 search: "/"
 replace:
     insert(":%s///g")
@@ -74,3 +81,10 @@ replace:
     key(left)
     key(left)
 
+docker image list: "docker image ls\n"
+docker container list: "docker container ls\n"
+docker container list all: "docker container ls -a\n"
+docker container kill: "docker container kill "
+docker run: "docker run "
+docker: "docker "
+docker run entrypoint bash: "docker run -it --entrypoint /bin/bash "

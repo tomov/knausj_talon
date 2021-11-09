@@ -170,7 +170,7 @@ symbol_key_words = {
     "left brace": "{",
     "R brace": "}",
     "right brace": "}",
-    "angle": "<",
+    #"angle": "<",
     "left angle": "<",
     "less than": "<",
     "rangle": ">",

@@ -23,8 +23,26 @@ num pie array:
 num pie where:
     "np.where()"
     key(left)
+num pie min:
+    "np.min()"
+    key(left)
+num pie max:
+    "np.max()"
+    key(left)
 num pie mean: 
     "np.mean()"
+    key(left)
+num pie delete:
+    "np.delete()"
+    key(left)
+num pie sum:
+    "np.sum()"
+    key(left)
+num pie cum sum:
+    "np.cumsum()"
+    key(left)
+num pie any:
+    "np.any()"
     key(left)
 torch array: 
     "torch.array()"
@@ -72,12 +90,18 @@ conan: "conan"
 nutonomy: "nutonomy" 
 topple: "tuple"
 yaml: "yaml"
+snake closed loop replay: "closed_loop_replay"
+snake closed loop sim: "closed_loop_sim"
+snake open loop replay: "open_loop_replay"
+snake open loop sim: "open_loop_sim"
 
 goal pose: "goal pose"
 snake goal pose: "goal_pose"
 pose: "pose"
 snake batch size: "batch_size"
 batch size: "batch size"
+
+tensor board: "tensorboard"
 
 search:
     key(ctrl-f)

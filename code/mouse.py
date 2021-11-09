@@ -248,6 +248,7 @@ def show_cursor_helper(show):
 
 
 def on_pop(active):
+    #print('POP!!!!')
     if gaze_job or scroll_job:
         if setting_mouse_enable_pop_stops_scroll.get() >= 1:
             stop_scroll()
