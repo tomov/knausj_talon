@@ -4,7 +4,7 @@
 -
 copy: key(ctrl-c)
 paste: key(ctrl-v)
-cut: key(ctrl-x)
+#cut: key(ctrl-x)
 
 # vim
 new: "$a\n" 
@@ -57,6 +57,9 @@ range:
 import <user.text>: "import {text}"
 import: "import "
 pie world: "pyworld"
+spatial map: "spatialmap"
+pie a vee utils: "pyavutils"
+a vee map: "avmap"
 self: "self"
 get attribute: 
     "getattr()"
@@ -69,18 +72,32 @@ magic mock:
     key(left)
 int: "int"
 bool: "bool"
+set trace: "import pdb; pdb.set_trace()"
 
 get ego track: "get_ego_track()"
+get route: "get_route()"
 get tracks: "get_tracks()"
 get base state: "get_base_state()"
 get center pose: "get_center_pose()"
 get velocity ex: "get_velocity_x()"
 get velocity why: "get_velocity_y()"
-get ex: "get_x()"
-get why: "get_y()"
-get heading: "get_heading()"
+get velocity long: "get_velocity_lon()"
+get ex: "getX()"
+get why: "getY()"
+get heading: "getHeading()"
+route: "route"
+get current goal pose: "get_current_goal_pose()"
 ego pose: "ego pose"
 snake ego pose: "ego_pose"
+snake ego is safe: "ego_is_safe"
+snake ego is comfortable: "ego_is_comfortable"
+snake ego is making progress: "ego_is_making_progress"
+snake ego progress: "ego_progress"
+hammer query interface: "QueryInterface"
+krauss: "krauss"
+hammer krauss: "Krauss"
+I python: "IPython "
+from: "from "
 dear: "dir"
 ordered dick: "OrderedDict"
 dick: "dict()"
@@ -94,14 +111,17 @@ snake closed loop replay: "closed_loop_replay"
 snake closed loop sim: "closed_loop_sim"
 snake open loop replay: "open_loop_replay"
 snake open loop sim: "open_loop_sim"
+pie: "py"
 
 goal pose: "goal pose"
 snake goal pose: "goal_pose"
+snake ego goal pose: "ego_goal_pose"
 pose: "pose"
 snake batch size: "batch_size"
 batch size: "batch size"
 
 tensor board: "tensorboard"
+jira: "JIRA"
 
 search:
     key(ctrl-f)

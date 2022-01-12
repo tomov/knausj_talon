@@ -23,6 +23,7 @@ make dear: "mkdir "
 move: "mv "
 remove: "rm "
 remove directory: "rmdir "
+change mod: "chmod "
 git revert: "git revert "
 
 conda environment list: "conda env list\n"
@@ -55,6 +56,7 @@ set paste: ":set paste\n"
 set no paste: ":set nopaste\n"
 set number: ":set nu\n"
 set no number: ":set nu!\n"
+vertical split: ":vs "
 echo: "echo "
 export: "export "
 source: "source "
@@ -68,6 +70,10 @@ diff: "diff "
 pee es oaks: 
     "ps aux | grep ''"
     key(left)
+snake viz: "snakeviz "
+real path: "realpath "
+distribute: "distribute "
+metrics: "metrics "
 
 
 # this is for vim, I can't get vim.talon to work
