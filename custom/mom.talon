@@ -7,7 +7,9 @@ paste: key(ctrl-v)
 #cut: key(ctrl-x)
 
 # vim
-new: "$a\n" 
+new line: "$a\n" 
+slap:
+    key(enter)
 
 length: 
     "len()"
@@ -16,7 +18,11 @@ print:
     "print()"
     key(left)
 assert: "assert"
-num pie: "np"
+num pie: "numpy"
+torch: "torch"
+torch tensor: "torch.Tensor"
+torch size: "torch.Size"
+dunder init: "__init__"
 num pie array: 
     "np.array()"
     key(left)
@@ -47,10 +53,18 @@ num pie any:
 torch array: 
     "torch.array()"
     key(left)
+torch log:
+    "torch.log()"
+    key(left)
+torch sum:
+    "torch.sum()"
+    key(left)
+torch arg max:
+    "torch.argmax()"
+    key(left)
 append: 
     "append()"
     key(left)
-embed: "embed"
 range:
     "range()"
     key(left)
@@ -66,6 +80,7 @@ get attribute:
     key(left)
 pandas: "pandas"
 DataFrame: "DataFrame"
+scene context: "SceneContext"
 keys: "keys()"
 magic mock: 
     insert("MagicMock()")
@@ -73,6 +88,8 @@ magic mock:
 int: "int"
 bool: "bool"
 set trace: "import pdb; pdb.set_trace()"
+embed: "from IPython import embed; embed()"
+print stack: "import traceback; traceback.print_stack()"
 
 get ego track: "get_ego_track()"
 get route: "get_route()"
@@ -98,7 +115,15 @@ krauss: "krauss"
 hammer krauss: "Krauss"
 I python: "IPython "
 from: "from "
-dear: "dir"
+dear: 
+    insert("dir()")
+    key(left)
+squares: 
+    insert("[]")
+    key(left)
+braces: 
+    insert("{}")
+    key(left)
 ordered dick: "OrderedDict"
 dick: "dict()"
 return: "return "
@@ -107,11 +132,22 @@ conan: "conan"
 nutonomy: "nutonomy" 
 topple: "tuple"
 yaml: "yaml"
+Jason: "json"
 snake closed loop replay: "closed_loop_replay"
 snake closed loop sim: "closed_loop_sim"
 snake open loop replay: "open_loop_replay"
 snake open loop sim: "open_loop_sim"
+borromean: "borromean"
+pie borromean rings: "pyborromean_rings"
 pie: "py"
+eval: "eval"
+decel: "decel"
+snake world trash: "world_traj"
+
+convert dots to slashes:
+    insert(":s/\./\//g")
+convert slashes to dots:
+    insert(":s/\//\./g")
 
 goal pose: "goal pose"
 snake goal pose: "goal_pose"
@@ -128,8 +164,14 @@ search:
 
 pit dot:
     key(pgdown)
+motional: "motional"
+
+
 
 settings():
-    speech.timeout = 0.150
+    speech.timeout = 0.350
 #insert_wait = 0
 #    key_wait = 20
+#
+#
+#

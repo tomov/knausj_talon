@@ -8,6 +8,8 @@ paste: key(ctrl-shift-v)
 
 vim: "vim "
 them: "vim "
+ten: "vim "
+10: "vim "
 list: "ls "
 list latch: "ls -latch "
 print directory: "pwd\n"
@@ -28,6 +30,7 @@ git revert: "git revert "
 
 conda environment list: "conda env list\n"
 conda activate <user.text>: "conda activate {text}"
+conda activate new env: "conda activate nuenv"
 conda deactivate: "conda deactivate\n"
 conda create: "conda create "
 conda remove: "conda remove "
@@ -37,10 +40,12 @@ pip install: "pip install "
 pip uninstall: "pip uninstall "
 pip freeze: "pip freeze "
 python: "python "
+python three: "python3 "
 basil: "bazel "
 basil run: "bazel run "
 basil build: "bazel build "
 basil sink: "bazel sync\n"
+basil test: "bazel test --cache_test_results=no "
 sudo: "sudo "
 es cancel: "scancel "
 es account: "sacct\n"
@@ -77,7 +82,9 @@ metrics: "metrics "
 
 
 # this is for vim, I can't get vim.talon to work
+editor save: ":w\n"
 vim save: ":w\n"
+editor quit: ":q\n"
 vim quit: ":q\n"
 save quit: ":wq\n"
 search: "/"
@@ -86,6 +93,7 @@ replace:
     key(left)
     key(left)
     key(left)
+torch set print options: "torch.set_printoptions(edgeitems=20, sci_mode=False, precision=3, linewidth=200)"
 
 docker image list: "docker image ls\n"
 docker container list: "docker container ls\n"
@@ -94,3 +102,4 @@ docker container kill: "docker container kill "
 docker run: "docker run "
 docker: "docker "
 docker run entrypoint bash: "docker run -it --entrypoint /bin/bash "
+new plan: "nuplan"
