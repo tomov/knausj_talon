@@ -25,4 +25,5 @@ search everywhere:
 
 see out: "std::cout<<"
 end of line: "<<std::endl;"
+const auto: "const auto "
 

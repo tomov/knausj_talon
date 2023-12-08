@@ -21,8 +21,19 @@ assert: "assert"
 num pie: "numpy"
 torch: "torch"
 torch tensor: "torch.Tensor"
+tensor: "Tensor"
 torch size: "torch.Size"
+torch clone: 
+    "torch.clone()"
+    key(left)
+torch load: 
+    "torch.load()"
+    key(left)
+torch save: 
+    "torch.save()"
+    key(left)
 dunder init: "__init__"
+is not none: " is not None"
 num pie array: 
     "np.array()"
     key(left)
@@ -62,6 +73,7 @@ torch sum:
 torch arg max:
     "torch.argmax()"
     key(left)
+torch set print options: "torch.set_printoptions(edgeitems=20, sci_mode=False, precision=3, linewidth=200)"
 append: 
     "append()"
     key(left)
@@ -128,7 +140,6 @@ ordered dick: "OrderedDict"
 dick: "dict()"
 return: "return "
 list: "list"
-conan: "conan" 
 nutonomy: "nutonomy" 
 topple: "tuple"
 yaml: "yaml"
@@ -166,7 +177,20 @@ pit dot:
     key(pgdown)
 motional: "motional"
 
+simian: "simian"
+simian latest log: "simian-latest-log"
+simian logs: "simian-logs"
+setup simian: "setup_simian.sh"
+Prometheus: "Prometheus"
 
+basil run a v test log home Scotty: "bazel run :avtestlog -- /home/scotty/"
+basil run a v test log: "bazel run :avtestlog -- "
+basil run iron hide: "bazel run :ironhide "
+basil run planner analyzer: "bazel run av/planning_controls/analysis_tools/determinism/analyzers:pns "
+drive logs download log: "drivelogs download_log -n "
+
+
+legacy mouse: tracking.control1_toggle()
 
 settings():
     speech.timeout = 0.350

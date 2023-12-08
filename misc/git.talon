@@ -4,6 +4,7 @@
 # Standard commands
 git add patch: "git add . -p\n"
 git add: "git add "
+git apply: "git apply "
 git add everything: "git add -u\n"
 git bisect: "git bisect "
 git blame: "git blame "
@@ -22,7 +23,7 @@ git clone: "git clone "
 # Leave \n out for confirmation since the operation is destructive
 git clean everything: "git clean -dfx"
 git commit message <user.text>: "git commit -m '{text}'"
-#git commit: "git commit\n"
+git commit: "git commit "
 git commit all: "git commit -a"
 git commit amend: "git commit -a --amend"
 git diff (colour|color) words: "git diff --color-words "

@@ -1,4 +1,4 @@
-tag: terminal
+tag: terminalDISABLED
 and tag: user.kubectl
 -
 cube [control]: "kubectl "
