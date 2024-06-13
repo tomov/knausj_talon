@@ -20,8 +20,8 @@ print:
 assert: "assert"
 num pie: "numpy"
 torch: "torch"
-torch tensor: "torch.Tensor"
-tensor: "Tensor"
+torch tensor: "torch.tensor"
+tensor: "tensor"
 torch size: "torch.Size"
 torch clone: 
     "torch.clone()"
@@ -186,7 +186,8 @@ Prometheus: "Prometheus"
 basil run a v test log home Scotty: "bazel run :avtestlog -- /home/scotty/"
 basil run a v test log: "bazel run :avtestlog -- "
 basil run iron hide: "bazel run :ironhide "
-basil run planner analyzer: "bazel run av/planning_controls/analysis_tools/determinism/analyzers:pns "
+#basil run planner analyzer: "bazel run av/planning_controls/analysis_tools/analyzers:pns "
+basil run planner analyzer: "bazel run -j 4 analyzer-pns -- "
 drive logs download log: "drivelogs download_log -n "
 
 
