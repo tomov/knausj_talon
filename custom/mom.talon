@@ -74,6 +74,7 @@ torch arg max:
     "torch.argmax()"
     key(left)
 torch set print options: "torch.set_printoptions(edgeitems=20, sci_mode=False, precision=3, linewidth=200)"
+num pie set print options: "np.set_printoptions(suppress=True,precision=3)"
 append: 
     "append()"
     key(left)
@@ -100,6 +101,7 @@ magic mock:
 int: "int"
 bool: "bool"
 set trace: "import pdb; pdb.set_trace()"
+breakpoint: "breakpoint()"
 embed: "from IPython import embed; embed()"
 print stack: "import traceback; traceback.print_stack()"
 
@@ -183,8 +185,11 @@ simian logs: "simian-logs"
 setup simian: "setup_simian.sh"
 Prometheus: "Prometheus"
 
+rename:
+    key(f2)
+
 basil run a v test log home Scotty: "bazel run :avtestlog -- /home/scotty/"
-basil run a v test log: "bazel run :avtestlog -- "
+basil run a v test log: "bazel run -j 4 //av/planning_controls/standalone-bin/AVTestLog -- "
 basil run iron hide: "bazel run :ironhide "
 #basil run planner analyzer: "bazel run av/planning_controls/analysis_tools/analyzers:pns "
 basil run planner analyzer: "bazel run -j 4 analyzer-pns -- "
