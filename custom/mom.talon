@@ -3,7 +3,7 @@
 # 
 -
 copy: key(ctrl-c)
-paste: key(ctrl-v)
+pasta: key(ctrl-v)
 #cut: key(ctrl-x)
 
 # vim
@@ -105,30 +105,30 @@ breakpoint: "breakpoint()"
 embed: "from IPython import embed; embed()"
 print stack: "import traceback; traceback.print_stack()"
 
-get ego track: "get_ego_track()"
-get route: "get_route()"
-get tracks: "get_tracks()"
-get base state: "get_base_state()"
-get center pose: "get_center_pose()"
-get velocity ex: "get_velocity_x()"
-get velocity why: "get_velocity_y()"
-get velocity long: "get_velocity_lon()"
-get ex: "getX()"
-get why: "getY()"
-get heading: "getHeading()"
-route: "route"
-get current goal pose: "get_current_goal_pose()"
-ego pose: "ego pose"
-snake ego pose: "ego_pose"
-snake ego is safe: "ego_is_safe"
-snake ego is comfortable: "ego_is_comfortable"
-snake ego is making progress: "ego_is_making_progress"
-snake ego progress: "ego_progress"
-hammer query interface: "QueryInterface"
-krauss: "krauss"
-hammer krauss: "Krauss"
+#get ego track: "get_ego_track()"
+#get route: "get_route()"
+#get tracks: "get_tracks()"
+#get base state: "get_base_state()"
+#get center pose: "get_center_pose()"
+#get velocity ex: "get_velocity_x()"
+#get velocity why: "get_velocity_y()"
+#get velocity long: "get_velocity_lon()"
+#get ex: "getX()"
+#get why: "getY()"
+#get heading: "getHeading()"
+#route: "route"
+#get current goal pose: "get_current_goal_pose()"
+#ego pose: "ego pose"
+#snake ego pose: "ego_pose"
+#snake ego is safe: "ego_is_safe"
+#snake ego is comfortable: "ego_is_comfortable"
+#snake ego is making progress: "ego_is_making_progress"
+#snake ego progress: "ego_progress"
+#hammer query interface: "QueryInterface"
+#krauss: "krauss"
+#hammer krauss: "Krauss"
 I python: "IPython "
-from: "from "
+#from: "from "
 dear: 
     insert("dir()")
     key(left)
@@ -141,20 +141,20 @@ braces:
 ordered dick: "OrderedDict"
 dick: "dict()"
 return: "return "
-list: "list"
-nutonomy: "nutonomy" 
+#list: "list"
+#nutonomy: "nutonomy" 
 topple: "tuple"
 yaml: "yaml"
 Jason: "json"
-snake closed loop replay: "closed_loop_replay"
-snake closed loop sim: "closed_loop_sim"
-snake open loop replay: "open_loop_replay"
-snake open loop sim: "open_loop_sim"
-borromean: "borromean"
-pie borromean rings: "pyborromean_rings"
+#snake closed loop replay: "closed_loop_replay"
+#snake closed loop sim: "closed_loop_sim"
+#snake open loop replay: "open_loop_replay"
+#snake open loop sim: "open_loop_sim"
+#borromean: "borromean"
+#pie borromean rings: "pyborromean_rings"
 pie: "py"
-eval: "eval"
-decel: "decel"
+#eval: "eval"
+#decel: "decel"
 snake world trash: "world_traj"
 
 convert dots to slashes:
@@ -189,17 +189,24 @@ rename:
     key(f2)
 
 basil run a v test log home Scotty: "bazel run :avtestlog -- /home/scotty/"
-basil run a v test log: "bazel run -j 4 //av/planning_controls/standalone-bin/AVTestLog -- "
+#basil run a v test log: "bazel run -j 4 //av/planning_controls/standalone-bin/AVTestLog -- "
+basil run a v test log: "bazel run -j 4 :avtestlog -- "
 basil run iron hide: "bazel run :ironhide "
 #basil run planner analyzer: "bazel run av/planning_controls/analysis_tools/analyzers:pns "
 basil run planner analyzer: "bazel run -j 4 analyzer-pns -- "
 drive logs download log: "drivelogs download_log -n "
 
 
+include:
+    insert('#include ""')
+    key(left)
+
+
 legacy mouse: tracking.control1_toggle()
 
 settings():
-    speech.timeout = 0.350
+    #speech.timeout = 0.350
+    speech.timeout = 0.250
 #insert_wait = 0
 #    key_wait = 20
 #

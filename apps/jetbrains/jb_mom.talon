@@ -1,15 +1,18 @@
 app: jetbrains
+app: sublime
+app: sublime text
 app: pycharm 
 app: clion
 app: jetbrains-pycharm 
 app: jetbrains-clion 
 -
 settings():
-    speech.timeout = 0.350
+    speech.timeout = 0.300
+    #speech.timeout = 0.350
     insert_wait = 0
     key_wait = 10
 copy: key(ctrl-shift-c)
-paste: key(ctrl-shift-v)
+pasta: key(ctrl-shift-v)
 search: "/"
 replace:
     insert(":%s///g")

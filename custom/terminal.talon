@@ -3,7 +3,7 @@ app: gnome-terminal
 -
 copy file: "cp "
 copy: key(ctrl-shift-c)
-paste: key(ctrl-shift-v)
+pasta: key(ctrl-shift-v)
 
 
 vim: "vim "
@@ -32,6 +32,7 @@ conda environment list: "conda env list\n"
 #conda activate <user.text>: "conda activate {text}"
 conda activate: "conda activate "
 conda activate new env: "conda activate nuenv"
+conda activate M L env: "conda activate mlenv"
 conda deactivate: "conda deactivate\n"
 conda create: "conda create "
 conda remove: "conda remove "
@@ -45,7 +46,9 @@ I python: "ipython\n"
 python three: "python3 "
 basil: "bazel "
 basil run: "bazel run -j 4 "
+#basil run jay four: "bazel run -j 4 "
 basil build: "bazel build -j 4 "
+#basil build jay four: "bazel build -j 4 "
 basil sink: "bazel sync\n"
 basil test: "bazel test --cache_test_results=no "
 basil run buildifier: "bazel run :buildifier\n"
@@ -65,8 +68,8 @@ kill dash nine: "kill -9 "
 find name:
     "find . -name ''"
     key(left)
-set paste: ":set paste\n"
-set no paste: ":set nopaste\n"
+set pasta: ":set paste\n"
+set no pasta: ":set nopaste\n"
 set number: ":set nu\n"
 set no number: ":set nu!\n"
 vertical split: ":vs "

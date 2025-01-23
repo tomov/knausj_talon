@@ -28,6 +28,7 @@ git commit all: "git commit -a"
 git commit amend: "git commit -a --amend"
 git diff (colour|color) words: "git diff --color-words "
 git diff: "git diff "
+get diff: "git diff "
 git diff cached: "git diff --cached\n"
 git fetch: "git fetch\n"
 git fetch all: "git fetch --all\n"
@@ -86,7 +87,7 @@ git (switch create | new branch) [<user.text>]:
   "git switch -c {user.formatted_text(text or '', 'DASH_SEPARATED')}"
 git switch orphan: "git switch --orphan "
 git submodule add:  "git submodule add "
-git tag: "git tag "
+#git tag: "git tag "
 git grep: 
     insert("git grep ''")
     key(left)
