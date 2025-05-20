@@ -155,19 +155,19 @@ Jason: "json"
 pie: "py"
 #eval: "eval"
 #decel: "decel"
-snake world trash: "world_traj"
+#snake world trash: "world_traj"
 
 convert dots to slashes:
     insert(":s/\./\//g")
 convert slashes to dots:
     insert(":s/\//\./g")
 
-goal pose: "goal pose"
-snake goal pose: "goal_pose"
-snake ego goal pose: "ego_goal_pose"
-pose: "pose"
-snake batch size: "batch_size"
-batch size: "batch size"
+#goal pose: "goal pose"
+#snake goal pose: "goal_pose"
+#snake ego goal pose: "ego_goal_pose"
+#pose: "pose"
+#snake batch size: "batch_size"
+#batch size: "batch size"
 
 tensor board: "tensorboard"
 jira: "JIRA"
