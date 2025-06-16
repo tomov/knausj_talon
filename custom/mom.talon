@@ -194,6 +194,7 @@ basil run a v test log: "bazel run -j 4 :avtestlog -- "
 basil run iron hide: "bazel run :ironhide "
 #basil run planner analyzer: "bazel run av/planning_controls/analysis_tools/analyzers:pns "
 basil run planner analyzer: "bazel run -j 4 analyzer-pns -- "
+basil run smoother analyzer: "bazel run -j 4 analyzer-smoother -- "
 drive logs download log: "drivelogs download_log -n "
 
 
@@ -201,6 +202,10 @@ include:
     insert('#include ""')
     key(left)
 
+
+M C T S: "MCTS"
+M L ranker: "ML ranker"
+M L planner: "ML planner"
 
 legacy mouse: tracking.control1_toggle()
 
