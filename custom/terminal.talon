@@ -4,6 +4,9 @@ app: gnome-terminal
 copy file: "cp "
 copy: key(ctrl-shift-c)
 pasta: key(ctrl-shift-v)
+copy pasta: 
+    key(ctrl-shift-c)
+    key(ctrl-shift-v)
 
 
 vim: "vim "
@@ -58,7 +61,7 @@ basil run pip update: "bazel run //:pip_deps.update"
 tox lint: "tox -e lint nuplan_internal"
 tox format: "tox -e format nuplan_internal"
 sudo: "sudo "
-sudo renice: "sudo renice -n 10 -p "
+sudo renice: "sudo renice -n -10 -p "
 es cancel: "scancel "
 es account: "sacct\n"
 jupiter notebook: "jupyter notebook\n"
@@ -106,6 +109,11 @@ replace:
     key(left)
     key(left)
     key(left)
+replace underscores with dashes:
+    insert(":s/_/-/g")
+replace dashes with underscore:
+    insert(":s/-/_/g")
+
 
 docker image list: "docker image ls\n"
 docker container list: "docker container ls\n"
