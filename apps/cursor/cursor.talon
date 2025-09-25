@@ -1,7 +1,8 @@
 app: cursor
 -
 copy: key(ctrl-shift-c)
-pasta: key(ctrl-shift-v)
+#pasta: key(ctrl-shift-v)
+pasta: key(ctrl-v)
 search: "/"
 replace:
     insert(":%s///g")
@@ -18,3 +19,4 @@ agent: key(ctrl-l)
 inline edit: key(ctrl-k)
 
 cursor settings: key(ctrl-shift-p)
+command palette: key(ctrl-shift-p)

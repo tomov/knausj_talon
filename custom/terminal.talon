@@ -140,7 +140,9 @@ A W S copy recursive: "aws s3 cp --recursive "
 A W S copy recursive ex data: "aws s3 cp --recursive s3://ml-prod-experiment/exp-data/momchil-tomov/"
 exp C L I login: "expcli login\n"
 exp C L I delete: "expcli delete_exp_data --paths /data/exp/momchil-tomov/"
+exp C L I delete cluster: "expcli delete_cluster --cluster_id "
 exp C L I create tensorboard: "expcli create_tensorboard --id "
+exp C L I cancel ray job: "expcli cancel_ray_job --job_id "
 A D P start: "./simulation/applied/scripts/local/adp_start.sh "
 A V stack: "av-stack"
 
@@ -163,3 +165,11 @@ launch A V test JS: "cd ~/avtest.js/out/build\n./run -d /data/exp/momchil-tomov/
 
 S C P from desktop: "scp momchil.tomov@10.17.6.51:"
 H top: "htop\n"
+
+hugo server: "hugo server -D"
+hugo new site: "hugo new site "
+hugo new content: "hugo new content "
+
+git L F S list files: "git lfs ls-files"
+git L F S status: "git lfs status"
+
