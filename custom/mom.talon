@@ -105,6 +105,11 @@ breakpoint: "breakpoint()"
 embed: "from IPython import embed; embed()"
 print stack: "import traceback; traceback.print_stack()"
 
+source M L env: "source ml/.envrc"
+source M L env no sink: "source ml/.envrc --no-sync"
+source M L env create: "source ml/.envrc --create"
+deactivate: "deactivate"
+
 #get ego track: "get_ego_track()"
 #get route: "get_route()"
 #get tracks: "get_tracks()"
