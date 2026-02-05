@@ -17,7 +17,8 @@ list: "ls "
 list latch: "ls -latch "
 print directory: "pwd\n"
 tea mux: "tmux"
-tea mux attach: "tmux a\n"
+tea mux list: "tmux ls"
+tea mux attach: "tmux a -t "
 change dear: "cd "
 go home: "cd ~\n"
 daddy: "cd ..\n"
@@ -38,6 +39,7 @@ conda deactivate: "conda deactivate\n"
 conda create: "conda create "
 conda remove: "conda remove "
 conda list: "conda list"
+conda env list: "conda env list"
 
 
 

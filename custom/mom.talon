@@ -174,7 +174,7 @@ convert slashes to dots:
 #snake batch size: "batch_size"
 #batch size: "batch size"
 
-tensor board: "tensorboard"
+tensor board log deer: "tensorboard --logdir "
 jira: "JIRA"
 
 search:
