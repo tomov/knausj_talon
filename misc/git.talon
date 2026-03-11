@@ -92,6 +92,12 @@ git grep:
     insert("git grep ''")
     key(left)
 
+git worktree list: "git worktree list"
+git worktree remove: "git worktree remove "
+git worktree add: "git worktree add "
+git worktree remove: "git worktree remove "
+git worktree prune: "git worktree prune"
+
 # Convenience
 git edit config: "git config --local -e\n"
 

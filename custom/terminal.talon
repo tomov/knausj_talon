@@ -7,6 +7,9 @@ pasta: key(ctrl-shift-v)
 copy pasta: 
     key(ctrl-shift-c)
     key(ctrl-shift-v)
+cap pasta: 
+    key(ctrl-shift-c)
+    key(ctrl-shift-v)
 
 
 claude: "claude"
@@ -60,13 +63,22 @@ basil: "bazel "
 basil run: "bazel run -j 4 "
 #basil run jay four: "bazel run -j 4 "
 basil build: "bazel build -j 4 "
+basil build debug: "bazel build -c dbg -j 4 "
 #basil build jay four: "bazel build -j 4 "
 basil sink: "bazel sync\n"
 basil test: "bazel test --cache_test_results=no "
 basil run buildifier: "bazel run :buildifier\n"
-basil run install AV stack: "bazel run :install_avstack --install_adp_maps"
+basil run install AV stack: "bazel run :install_avstack"
+#basil run install AV stack: "bazel run :install_avstack --install_adp_maps"
+basil run get calibration file: "bazel run //config:get_calibration_file -- --vehicle_id="
+basil run install maps: "bazel run :install_maps --install_map=us-nv-las-vegas-strip"
 basil run install config: "bazel run :install_config"
 basil run pip update: "bazel run //:pip_deps.update"
+basil run log player: "bazel run //autonomy_tools/logplayer/logplayer-gui:logplayer-gui -- -p "
+basil run generate test data: "bazel run //infrastructure/messages/test:generate_test_data"
+run autonomy process plan zero: "~/sh/run_autonomy_process_plan_zero.sh"
+run autonomy process prediction: "~/sh/run_autonomy_process_prediction.sh"
+data exp dear: "/data/exp/momchil.tomov/"
 tox lint: "tox -e lint nuplan_internal"
 tox format: "tox -e format nuplan_internal"
 sudo: "sudo "
@@ -104,6 +116,8 @@ snake viz: "snakeviz "
 real path: "realpath "
 distribute: "distribute "
 metrics: "metrics "
+reload CUDA kernel: "sudo rmmod nvidia_uvm; sudo modprobe nvidia_uvm"
+check CUDA kernel: "python -c \"import torch; print('CUDA available:', torch.cuda.is_available())\""
 
 
 # this is for vim, I can't get vim.talon to work
@@ -184,3 +198,4 @@ hugo new content: "hugo new content "
 git L F S list files: "git lfs ls-files"
 git L F S status: "git lfs status"
 
+mongo shell: mongosh
