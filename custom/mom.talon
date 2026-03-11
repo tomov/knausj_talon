@@ -6,6 +6,11 @@ copy: key(ctrl-c)
 pasta: key(ctrl-v)
 #cut: key(ctrl-x)
 
+# Open Claw TODO move 
+session status: "/status"
+new session: "/new"
+
+
 # vim
 new line: "$a\n" 
 slap:

@@ -9,6 +9,9 @@ copy pasta:
     key(ctrl-shift-v)
 
 
+claude: "claude"
+claude resume: "claude --resume "
+
 vim: "vim "
 them: "vim "
 ten: "vim "
@@ -42,6 +45,9 @@ conda list: "conda list"
 conda env list: "conda env list"
 
 
+open claw models status: "openclaw models status"
+open claw onboard: "openclaw onboard"
+open claw : "openclaw "
 
 pip install: "pip install "
 pip uninstall: "pip uninstall "
@@ -123,6 +129,7 @@ docker container list: "docker container ls\n"
 docker container list all: "docker container ls -a\n"
 docker container kill: "docker container kill "
 docker run: "docker run "
+docker P S: "docker ps -a"
 docker: "docker "
 docker run entrypoint bash: "docker run -it --entrypoint /bin/bash "
 new plan: "nuplan"
