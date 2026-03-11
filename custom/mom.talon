@@ -197,8 +197,9 @@ basil run a v test log: "bazel run -j 4 :avtestlog -- "
 basil run iron hide: "bazel run :ironhide "
 #basil run planner analyzer: "bazel run av/planning_controls/analysis_tools/analyzers:pns "
 basil run planner analyzer: "bazel run -j 4 analyzer-pns -- "
+basil run plan zero analyzer: "bazel run -j 4 analyzer-pz -- "
 basil run smoother analyzer: "bazel run -j 4 analyzer-smoother -- "
-basil run plan zero analyzer: "bazel run -j 4 :analyzer-pz-ol"
+#basil run plan zero analyzer: "bazel run -j 4 :analyzer-pz-ol"
 basil build autonomy process: "bazel build //faster/graphs/autonomy:autonomy_process"
 # -- -l
 # -- [test]

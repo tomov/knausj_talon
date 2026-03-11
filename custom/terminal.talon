@@ -7,6 +7,9 @@ pasta: key(ctrl-shift-v)
 copy pasta: 
     key(ctrl-shift-c)
     key(ctrl-shift-v)
+cap pasta: 
+    key(ctrl-shift-c)
+    key(ctrl-shift-v)
 
 
 vim: "vim "
@@ -69,6 +72,7 @@ basil run log player: "bazel run //autonomy_tools/logplayer/logplayer-gui:logpla
 basil run generate test data: "bazel run //infrastructure/messages/test:generate_test_data"
 run autonomy process plan zero: "~/sh/run_autonomy_process_plan_zero.sh"
 run autonomy process prediction: "~/sh/run_autonomy_process_prediction.sh"
+data exp dear: "/data/exp/momchil.tomov/"
 tox lint: "tox -e lint nuplan_internal"
 tox format: "tox -e format nuplan_internal"
 sudo: "sudo "
