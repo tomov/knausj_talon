@@ -14,6 +14,9 @@ cap pasta:
 
 claude: "claude"
 claude resume: "claude --resume "
+claude YOLO: "claude --dangerously-skip-permissions"
+claude YOLO mode: "claude --dangerously-skip-permissions"
+claude YOLO resume: "claude --dangerously-skip-permissions --resume"
 
 vim: "vim "
 them: "vim "
