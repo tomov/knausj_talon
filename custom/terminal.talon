@@ -141,6 +141,11 @@ replace underscores with dashes:
 replace dashes with underscore:
     insert(":s/-/_/g")
 
+#login to Harvard cluster: "~/sh/harvard_cluster.sh\n"
+S S H into Harvard cluster: "ssh -YC mtomov13@fasselogin02.rc.fas.harvard.edu"
+login to Harvard cluster: "ssh -YC mtomov13@fasselogin02.rc.fas.harvard.edu"
+S queue: "squeue -u mtomov13 -t RUNNING"
+S share: "sshare --account=gershman_lab -a"
 
 docker image list: "docker image ls\n"
 docker container list: "docker container ls\n"
