@@ -17,6 +17,7 @@ claude resume: "claude --resume "
 claude YOLO: "claude --dangerously-skip-permissions"
 claude YOLO mode: "claude --dangerously-skip-permissions"
 claude YOLO resume: "claude --dangerously-skip-permissions --resume"
+claude docker container: "~/sh/run-av-stack-claude-docker.sh"
 
 vim: "vim "
 them: "vim "
@@ -168,9 +169,11 @@ A W S copy recursive ex data: "aws s3 cp --recursive s3://ml-prod-experiment/exp
 exp C L I login: "expcli login\n"
 exp C L I delete: "expcli delete_exp_data --paths /data/exp/momchil-tomov/"
 exp C L I delete cluster: "expcli delete_cluster --cluster_id "
-exp C L I create tensorboard: "expcli create_tensorboard --id "
+exp C L I create tensorboard: "expcli create_tensorboard --exp_dir /data/exp/momchil-tomov/  --id "
+# expcli create_tensorboard --id pz-gm-fix-260331-130928 --exp_dir /data/exp/momchil-tomov/pz_gm_fix/pz_gm_fix_260331_130928
 exp C L I cancel ray job: "expcli cancel_ray_job --job_id "
 exp C L I list cluster config: "expcli list_cluster_config"
+exp C L I upgrade: "pip install expapicli --upgrade"
 A D P start: "./simulation/applied/scripts/local/adp_start.sh "
 A V stack: "av-stack"
 
