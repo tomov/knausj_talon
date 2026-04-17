@@ -16,104 +16,99 @@ new line: "$a\n"
 slap:
     key(enter)
 
-length: 
-    "len()"
-    key(left)
-print: 
-    "print()"
-    key(left)
-assert: "assert"
-num pie: "numpy"
-torch: "torch"
-torch tensor: "torch.tensor"
-tensor: "tensor"
-torch size: "torch.Size"
-torch clone: 
-    "torch.clone()"
-    key(left)
-torch load: 
-    "torch.load()"
-    key(left)
-torch save: 
-    "torch.save()"
-    key(left)
-dunder init: "__init__"
-is not none: " is not None"
-num pie array: 
-    "np.array()"
-    key(left)
-num pie where:
-    "np.where()"
-    key(left)
-num pie min:
-    "np.min()"
-    key(left)
-num pie max:
-    "np.max()"
-    key(left)
-num pie mean: 
-    "np.mean()"
-    key(left)
-num pie delete:
-    "np.delete()"
-    key(left)
-num pie sum:
-    "np.sum()"
-    key(left)
-num pie cum sum:
-    "np.cumsum()"
-    key(left)
-num pie any:
-    "np.any()"
-    key(left)
-torch array: 
-    "torch.array()"
-    key(left)
-torch log:
-    "torch.log()"
-    key(left)
-torch sum:
-    "torch.sum()"
-    key(left)
-torch arg max:
-    "torch.argmax()"
-    key(left)
-torch set print options: "torch.set_printoptions(edgeitems=20, sci_mode=False, precision=3, linewidth=200)"
-num pie set print options: "np.set_printoptions(suppress=True,precision=3)"
-append: 
-    "append()"
-    key(left)
-range:
-    "range()"
-    key(left)
-import <user.text>: "import {text}"
-import: "import "
-pie world: "pyworld"
-spatial map: "spatialmap"
-pie a vee utils: "pyavutils"
-a vee map: "avmap"
-self: "self"
-get attribute: 
-    "getattr()"
-    key(left)
-pandas: "pandas"
-DataFrame: "DataFrame"
-scene context: "SceneContext"
-keys: "keys()"
-magic mock: 
-    insert("MagicMock()")
-    key(left)
-int: "int"
-bool: "bool"
-set trace: "import pdb; pdb.set_trace()"
-breakpoint: "breakpoint()"
-embed: "from IPython import embed; embed()"
-print stack: "import traceback; traceback.print_stack()"
-
-source M L env: "source ml/.envrc"
-source M L env no sink: "source ml/.envrc --no-sync"
-source M L env create: "source ml/.envrc --create"
-deactivate: "deactivate"
+#length: 
+#    "len()"
+#    key(left)
+#print: 
+#    "print()"
+#    key(left)
+#assert: "assert"
+#num pie: "numpy"
+#torch: "torch"
+#torch tensor: "torch.tensor"
+#tensor: "tensor"
+#torch size: "torch.Size"
+#torch clone: 
+#    "torch.clone()"
+#    key(left)
+#torch load: 
+#    "torch.load()"
+#    key(left)
+#torch save: 
+#    "torch.save()"
+#    key(left)
+#dunder init: "__init__"
+#is not none: " is not None"
+#num pie array: 
+#    "np.array()"
+#    key(left)
+#num pie where:
+#    "np.where()"
+#    key(left)
+#num pie min:
+#    "np.min()"
+#    key(left)
+#num pie max:
+#    "np.max()"
+#    key(left)
+#num pie mean: 
+#    "np.mean()"
+#    key(left)
+#num pie delete:
+#    "np.delete()"
+#    key(left)
+#num pie sum:
+#    "np.sum()"
+#    key(left)
+#num pie cum sum:
+#    "np.cumsum()"
+#    key(left)
+#num pie any:
+#    "np.any()"
+#    key(left)
+#torch array: 
+#    "torch.array()"
+#    key(left)
+#torch log:
+#    "torch.log()"
+#    key(left)
+#torch sum:
+#    "torch.sum()"
+#    key(left)
+#torch arg max:
+#    "torch.argmax()"
+#    key(left)
+#torch set print options: "torch.set_printoptions(edgeitems=20, sci_mode=False, precision=3, linewidth=200)"
+#num pie set print options: "np.set_printoptions(suppress=True,precision=3)"
+#append: 
+#    "append()"
+#    key(left)
+#range:
+#    "range()"
+#    key(left)
+#import <user.text>: "import {text}"
+#import: "import "
+#pie world: "pyworld"
+#spatial map: "spatialmap"
+#pie a vee utils: "pyavutils"
+#a vee map: "avmap"
+#self: "self"
+#get attribute: 
+#    "getattr()"
+#    key(left)
+#pandas: "pandas"
+#DataFrame: "DataFrame"
+#scene context: "SceneContext"
+#keys: "keys()"
+#magic mock: 
+#    insert("MagicMock()")
+#    key(left)
+#int: "int"
+#bool: "bool"
+#set trace: "import pdb; pdb.set_trace()"
+#breakpoint: "breakpoint()"
+#embed: "from IPython import embed; embed()"
+#print stack: "import traceback; traceback.print_stack()"
 
 #get ego track: "get_ego_track()"
 #get route: "get_route()"

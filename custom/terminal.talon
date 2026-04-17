@@ -16,8 +16,9 @@ claude: "claude"
 claude resume: "claude --resume "
 claude YOLO: "claude --dangerously-skip-permissions"
 claude YOLO mode: "claude --dangerously-skip-permissions"
-claude YOLO resume: "claude --dangerously-skip-permissions --resume"
+claude YOLO resume: "claude --dangerously-skip-permissions --resume "
 claude docker container: "~/sh/run-av-stack-claude-docker.sh"
+claude auth status: "claude auth status"
 
 vim: "vim "
 them: "vim "
@@ -106,7 +107,7 @@ echo: "echo "
 export: "export "
 source: "source "
 env RC: ".envrc"
-exit: "exit()\n"
+exit: "exit"
 envidia smee: "nvidia-smi"
 watch: "watch "
 bash ar see: "~/.bashrc"
@@ -118,10 +119,17 @@ P S aux grep:
     key(left)
 snake viz: "snakeviz "
 real path: "realpath "
-distribute: "distribute "
-metrics: "metrics "
+#distribute: "distribute "
+#metrics: "metrics "
+
 reload CUDA kernel: "sudo rmmod nvidia_uvm; sudo modprobe nvidia_uvm"
 check CUDA kernel: "python -c \"import torch; print('CUDA available:', torch.cuda.is_available())\""
+
+
+source M L env: "source ml/.envrc"
+source M L env no sink: "source ml/.envrc --no-sync"
+source M L env create: "source ml/.envrc --create"
+deactivate: "deactivate"
 
 
 # this is for vim, I can't get vim.talon to work
@@ -171,6 +179,7 @@ A W S sync ex data: "aws s3 sync s3://ml-prod-experiment/exp-data/momchil-tomov/
 A W S copy: "aws s3 cp "
 A W S copy recursive: "aws s3 cp --recursive "
 A W S copy recursive ex data: "aws s3 cp --recursive s3://ml-prod-experiment/exp-data/momchil-tomov/"
+
 exp C L I login: "expcli login\n"
 exp C L I delete: "expcli delete_exp_data --paths /data/exp/momchil-tomov/"
 exp C L I delete cluster: "expcli delete_cluster --cluster_id "
