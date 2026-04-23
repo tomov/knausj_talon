@@ -32,7 +32,7 @@ tea mux list: "tmux ls"
 tea mux attach: "tmux a -t "
 change dear: "cd "
 go home: "cd ~\n"
-daddy: "cd ..\n"
+#daddy: "cd ..\n"
 grep:
     insert("grep ''")
     key(left)

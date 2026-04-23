@@ -182,6 +182,8 @@ pit dot:
     key(pgdown)
 motional: "motional"
 
+G mail: "gmail"
+
 simian: "simian"
 simian latest log: "simian-latest-log"
 simian logs: "simian-logs"
