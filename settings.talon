@@ -40,7 +40,10 @@ settings():
     # 0 = off
     # 1 = on with eyetracker but not zoom mouse mode
     # 2 = on but not with zoom mouse mode
-    user.mouse_enable_pop_click = 1
+    # MT: 2, not the default 1. Pre-1.0 this clicked whenever a tracker was
+    # merely attached; the new logic requires eye tracking to be actively
+    # enabled, which silently killed pop-to-click for me.
+    user.mouse_enable_pop_click = 2
 
     # If `true`, use a hissing noise to scroll continuously
     user.mouse_enable_hiss_scroll = false

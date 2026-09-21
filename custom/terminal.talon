@@ -100,11 +100,6 @@ kill dash nine: "kill -9 "
 find name:
     "find . -name ''"
     key(left)
-set pasta: ":set paste\n"
-set no pasta: ":set nopaste\n"
-set number: ":set nu\n"
-set no number: ":set nu!\n"
-vertical split: ":vs "
 echo: "echo "
 export: "export "
 source: "source "
@@ -134,22 +129,8 @@ source M L env create: "source ml/.envrc --create"
 deactivate: "deactivate"
 
 
-# this is for vim, I can't get vim.talon to work
-editor save: ":w\n"
-vim save: ":w\n"
-editor quit: ":q\n"
-vim quit: ":q\n"
-save quit: ":wq\n"
-search: "/"
-replace:
-    insert(":%s///g")
-    key(left)
-    key(left)
-    key(left)
-replace underscores with dashes:
-    insert(":s/_/-/g")
-replace dashes with underscore:
-    insert(":s/-/_/g")
+# MT: the vim commands that used to live here moved to custom/vim.talon now that
+# it actually matches. "save quit" in particular was defined in both files.
 
 #login to Harvard cluster: "~/sh/harvard_cluster.sh\n"
 S S H into Harvard cluster: "ssh -YC mtomov13@fasselogin02.rc.fas.harvard.edu"
