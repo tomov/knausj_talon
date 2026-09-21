@@ -1,7 +1,8 @@
 tag: user.code_imperative
 -
 
-block: user.code_block()
+# MT: disabled
+#block: user.code_block()
 state if: user.insert_snippet_by_name("ifStatement")
 state else if: user.insert_snippet_by_name("elseIfStatement")
 state else: user.insert_snippet_by_name("elseStatement")

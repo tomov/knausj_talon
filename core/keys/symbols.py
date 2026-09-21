@@ -52,7 +52,8 @@ class Symbol:
 
 currency_symbols = [
     Symbol("$", ["dollar sign"], ["dollar"]),
-    Symbol("£", ["pound sign"], ["pound"]),
+    # MT: "pound" is # for me, so £ has no spoken form
+
     Symbol("€", ["euro sign"], ["euro"]),
 ]
 
@@ -65,7 +66,8 @@ old_symbols = [
     Symbol("?", ["question mark"], ["question"]),
     Symbol("!", ["exclamation mark", "exclamation point"], ["bang"]),
     Symbol("*", ["asterisk"], ["star"]),
-    Symbol("#", ["hash sign", "number sign"], ["hash"]),
+    # MT: "pound"/"pound sign" map to # here, not £ (see currency_symbols below)
+    Symbol("#", ["hash sign", "number sign", "pound sign"], ["hash", "pound"]),
     Symbol("%", ["percent sign"], ["percent"]),
     Symbol("@", ["at symbol", "at sign"]),
     Symbol("°", ["degree sign"], ["degree", "degrees"]),
@@ -83,9 +85,11 @@ old_symbols = [
     Symbol("]", None, ["R brack", "R bracket", "right bracket", "R square", "right square"]),
     Symbol("/", ["forward slash"], ["slash"]),
     Symbol("\\", None, ["backslash"]),
-    Symbol("{", None, ["brace", "L brace", "left brace", "curly bracket", "left curly bracket"],),
+    # MT: bare "brace" removed -- misrecognized too often
+    Symbol("{", None, ["L brace", "left brace", "curly bracket", "left curly bracket"],),
     Symbol("}", None, ["R brace", "right brace","R curly bracket", "right curly bracket"]),
-    Symbol("<", None, ["angle", "L Angle", "left angle", "less than"]),
+    # MT: bare "angle" removed -- misrecognized too often
+    Symbol("<", None, ["L Angle", "left angle", "less than"]),
     Symbol(">", None, ["rangle", "R angle", "right angle", "greater than"]),
     Symbol("^", None, ["caret"]),
     Symbol("|", None, ["pipe"]),

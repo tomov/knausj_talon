@@ -1,11 +1,13 @@
-new line: "\n"
+# MT: disabled, conflicts with my own bindings
+#new line: "\n"
 double dash: "--"
 triple quote: "'''"
 triple grave | triple back tick | gravy: "```"
 dot dot | dotdot: ".."
 ellipsis: "..."
 comma and | spamma: ", "
-arrow: "->"
+# MT: disabled, conflicts with my own bindings
+#arrow: "->"
 dub arrow: "=>"
 
 # Insert delimiter pairs

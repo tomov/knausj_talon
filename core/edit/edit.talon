@@ -65,7 +65,8 @@ clone line: edit.line_clone()
 
 # Insert new line
 new line above: edit.line_insert_up()
-new line below | slap: edit.line_insert_down()
+# MT: dropped the "slap" alternative -- I redefine it in custom/mom.talon
+new line below: edit.line_insert_down()
 
 # Insert padding with optional symbols
 padding: user.insert_between(" ", " ")

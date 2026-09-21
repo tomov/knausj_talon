@@ -2,6 +2,7 @@
 __pycache__
 *.sw?
 .idea/
+custom/secret.talon
 # Locally generated
 # we highly recommended against removing the private folder from the gitignore file
 # the directory is used to store sensitive information such as contacts
