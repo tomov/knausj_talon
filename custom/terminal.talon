@@ -1,5 +1,7 @@
-app: terminal
-app: gnome-terminal
+# MT: was "app: terminal" / "app: gnome-terminal". Neither is a declared app id,
+# so under Talon 1.0 this whole file stopped matching. The registered id is
+# gnome_terminal (see apps/gnome_terminal/gnome_terminal.py).
+app: gnome_terminal
 -
 copy file: "cp "
 copy: key(ctrl-shift-c)
@@ -219,4 +221,4 @@ hugo new content: "hugo new content "
 git L F S list files: "git lfs ls-files"
 git L F S status: "git lfs status"
 
-mongo shell: mongosh
+mongo shell: "mongosh"
