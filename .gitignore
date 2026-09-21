@@ -2,6 +2,9 @@
 __pycache__
 *.sw?
 .idea/
+# MT: auto-generated per hostname by core/system_paths.py -- machine-specific
+core/system_paths-*.talon-list
+# MT: credentials/hosts/personal data -- must never be committed
 custom/secret.talon
 # Locally generated
 # we highly recommended against removing the private folder from the gitignore file

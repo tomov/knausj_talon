@@ -1,6 +1,9 @@
 settings():
     # Show subtitles?
-    user.subtitles_show = false
+    # MT: Talon 1.0 deleted its built-in subtitles plugin (and the
+    # Speech Recognition > Show Subtitles menu item along with it).
+    # Community's userspace subtitles replace it, but ship off by default.
+    user.subtitles_show = true
     # Screens on which to show subtitles:
     # "all" - all screens
     # "main" - main screen as configured in OS

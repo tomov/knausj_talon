@@ -1,3 +1,5 @@
+# MT: moved here from apps/cursor/cursor.talon so all my commands live under
+# custom/. The "cursor" app id is declared in custom/app_ids.py.
 app: cursor
 -
 copy: key(ctrl-shift-c)

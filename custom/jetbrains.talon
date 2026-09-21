@@ -1,10 +1,9 @@
+# MT: moved here from apps/jetbrains/jb_mom.talon. Only "jetbrains" is a real
+# app id (declared in custom/app_ids.py) and its matchers already cover pycharm
+# and clion, so the per-IDE headers are gone. The old sublime headers are gone
+# too -- they duplicated copy/pasta/search/replace from custom/sublime.talon,
+# which would now be an ambiguity rather than a silent no-op.
 app: jetbrains
-app: sublime
-app: sublime text
-app: pycharm 
-app: clion
-app: jetbrains-pycharm 
-app: jetbrains-clion 
 -
 settings():
     speech.timeout = 0.300

@@ -1,5 +1,8 @@
 os: mac
 app: iterm2
+# MT: inert on Linux (this file is os: mac), kept only so the header survives
+# if I ever use iTerm again. "iterm" is not a declared app id, so it matches
+# nothing under Talon 1.0; only "iterm2" above is real.
 app: iterm
 -
 
