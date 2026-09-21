@@ -5,7 +5,8 @@ Everything I write lives in this directory. Nothing else should.
 | File | Context | What it is |
 | --- | --- | --- |
 | `mom.talon` | global | Coding vocabulary, bazel/drivelog commands, `speech.timeout` |
-| `terminal.talon` | `app: gnome_terminal` | ~150 shell commands (git, bazel, aws, docker, conda, ssh) |
+| `terminal.talon` | `app: gnome_terminal` | ~150 shell commands (bazel, aws, docker, conda, ssh) |
+| `git.talon` | global | 95 git commands. Global on purpose -- see the header |
 | `vim.talon` | `app: vim` (`win.title:/VIM/`) | vim ex-commands; matches vim running inside a terminal |
 | `cursor.talon` | `app: cursor` | Cursor keybinds |
 | `sublime.talon` | `app: sublime` | Sublime keybinds |
@@ -40,6 +41,22 @@ edit I have made *outside* this directory carries an `MT:` comment.
    done
    ```
 
+### Catching a whole file that went missing
+
+The `MT:` sweep above only finds files that still exist. It cannot find a file
+of mine that upstream *moved or deleted*, because then there is nothing left to
+grep -- that is exactly how `misc/git.talon` (all 95 git commands) was lost in
+the 1.0 port and not noticed until `git push origin` stopped responding.
+
+So also diff the old fork against the base it was forked from, and account for
+every line of that list:
+
+```sh
+git diff --name-status master backup/pre-squash-tip
+```
+
+Keep a `backup/pre-<upgrade>` tag before every upgrade so this stays possible.
+
 ## Things that bit me on the 0.4.0 -> 1.0.0 upgrade
 
 Check these first when commands go quiet after an upgrade.
@@ -73,9 +90,18 @@ Check these first when commands go quiet after an upgrade.
   upstream command set collided with mine. Because `jetbrains.py` is where
   upstream declared the `jetbrains` app id, `app_ids.py` re-declares it.
 
+## Open question
+
+In the old fork I had disabled upstream's `text/generic_editor.talon` wholesale
+(renamed to `.NOtalon`): `find it`, `next one`, `go word left`, etc. Those
+commands now live in `core/edit/edit.talon`, which is core and cannot simply be
+switched off, so they are currently **active again**. Nothing reports an
+ambiguity, so I have left them on. If they start fighting my own commands,
+override the specific ones rather than disabling the file.
+
 ## Upstream tags I intentionally leave off
 
 `apps/gnome_terminal/gnome_terminal.talon` does **not** enable `user.git` or
 `user.kubectl`. Upstream's composable `git {user.git_command}` grammar is nicer,
-but it makes my own `git ...` commands in `terminal.talon` ambiguous, and I have
+but it makes my own `git ...` commands in `git.talon` ambiguous, and I have
 years of muscle memory in those. Re-enable both tags if I ever drop my set.
