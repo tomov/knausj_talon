@@ -21,19 +21,23 @@ The plan is deliberately low-tech: nothing here is upstreamed, and a future
 upgrade may mean porting it over again. That's fine. To make that cheap, every
 edit I have made *outside* this directory carries an `MT:` comment.
 
-1. See everything that diverges from upstream:
+1. **Read `BREAKING_CHANGES.txt` at the repo root first.** It is sorted newest
+   first and lists exactly what upstream broke on purpose. Skipping it is how
+   the `10: "vim "` warning below survived the 1.0 port unnoticed.
+
+2. See everything that diverges from upstream:
 
    ```sh
    git fetch upstream && git diff upstream/main -- .
    ```
 
-2. Read the rationale for each divergence outside `custom/`:
+3. Read the rationale for each divergence outside `custom/`:
 
    ```sh
    git grep -n "MT:" -- ':!custom/'
    ```
 
-3. Re-apply those by hand on top of the new upstream, then confirm nothing is
+4. Re-apply those by hand on top of the new upstream, then confirm nothing is
    unaccounted for — this must print nothing:
 
    ```sh
@@ -88,6 +92,8 @@ Check these first when commands go quiet after an upgrade.
   *still* returns True -- which makes pop swallow the noise without ending the
   drag or clicking. See `mouse_drag_fix.py`; set `MT_DRAG_DEBUG = True` there to
   log presses and releases.
+- **Spoken forms must be words, not digits.** `10: "vim "` made Talon log
+  `skipped unknown tokens: ['0', '1']` on every single phrase. Spell it (`ten`).
 - **`~/.talon/user/engines.py` is obsolete** (renamed to
   `engines.py.disabled-talon-1.0`). It loaded a w2l conformer model whose
   `acoustic.bin` no longer ships; Talon 1.0 supplies its own engine.
@@ -97,6 +103,22 @@ Check these first when commands go quiet after an upgrade.
 - `apps/jetbrains/jetbrains.py`, `apps/jetbrains/jetbrains.talon` — removed; the
   upstream command set collided with mine. Because `jetbrains.py` is where
   upstream declared the `jetbrains` app id, `app_ids.py` re-declares it.
+
+## Deprecated commands I still say out of habit
+
+The log says I used these 19 times. Both still work, but they warn:
+
+| I say | Say instead |
+| --- | --- |
+| `talon sleep` | `go to sleep` |
+| `talon wake` | `wake up` |
+
+Find any others with:
+
+```sh
+grep -oE 'The "[^"]+" command is deprecated.*Instead, say: "[^"]+"' ~/.talon/talon.log \
+  | sort | uniq -c | sort -rn
+```
 
 ## Open question
 

@@ -25,7 +25,9 @@ claude auth status: "claude auth status"
 vim: "vim "
 them: "vim "
 ten: "vim "
-10: "vim "
+# MT: was `10: "vim "`. Digits are not valid spoken tokens, so Talon logged
+# `skipped unknown tokens: ['0', '1']` on every phrase. "ten" above already
+# covers it.
 list: "ls "
 list latch: "ls -latch "
 print directory: "pwd\n"
