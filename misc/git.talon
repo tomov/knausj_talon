@@ -97,6 +97,7 @@ git grep:
 git worktree list: "git worktree list"
 git worktree remove: "git worktree remove "
 git worktree add: "git worktree add "
+git worktree remove: "git worktree remove "
 git worktree remove force: "git worktree remove --force "
 git worktree prune: "git worktree prune"
 
