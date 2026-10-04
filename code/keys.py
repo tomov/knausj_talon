@@ -3,7 +3,7 @@ from typing import Set
 from talon import Module, Context, actions, app
 import sys
 
-default_alphabet = "air bat cap drum each fine gust harp sit jury crunch look made near odd pit quench red sun trap urge vest whale plex yank zip".split(
+default_alphabet = "air bat cap drum each fine gust harp sit jury crunch look made near odd pit quench red sun trap urge vest whale plex yank zebra".split(
     " "
 )
 letters_string = "abcdefghijklmnopqrstuvwxyz"
@@ -153,7 +153,7 @@ punctuation_words = {
 
     # Currencies
     "dollar sign": "$",
-    "pound sign": "£",
+    "pound sign": "#",
 }
 symbol_key_words = {
     "dot": ".",
@@ -180,11 +180,11 @@ symbol_key_words = {
     "left paren": "(",
     "R paren": ")",
     "right paren": ")",
-    "brace": "{",
+    #"brace": "{",
     "left brace": "{",
     "R brace": "}",
     "right brace": "}",
-    "angle": "<",
+    #"angle": "<",
     "left angle": "<",
     "less than": "<",
     "rangle": ">",
@@ -202,7 +202,7 @@ symbol_key_words = {
 
     # Currencies
     "dollar": "$",
-    "pound": "£",
+    "pound": "#",
 }
 
 # make punctuation words also included in {user.symbol_keys}
