@@ -1,7 +1,13 @@
-app: jetbrains
-app.name: Sublime Text
-app.name: /PyCharm/
-app.name: /CLion/
+# each group starts with os: so the groups are OR'd (different keys on
+# separate lines would otherwise be AND'd)
+os: mac
+and app: jetbrains
+os: mac
+and app.name: Sublime Text
+os: mac
+and app.name: /PyCharm/
+os: mac
+and app.name: /CLion/
 -
 settings():
     speech.timeout = 0.300
