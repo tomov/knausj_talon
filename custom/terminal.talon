@@ -15,7 +15,7 @@ cap pasta:
 claude: "claude"
 claude resume: "claude --resume "
 claude YOLO: "claude --dangerously-skip-permissions"
-claude YOLO mode: "claude --dangerously-skip-permissions"
+claude YOLO mode: "claude --dangerously-skip-permissions "
 claude YOLO resume: "claude --dangerously-skip-permissions --resume "
 claude docker container: "~/sh/run-av-stack-claude-docker.sh"
 claude auth status: "claude auth status"
@@ -74,13 +74,18 @@ basil sink: "bazel sync\n"
 basil test: "bazel test --cache_test_results=no "
 basil run buildifier: "bazel run :buildifier\n"
 basil run install AV stack: "bazel run :install_avstack"
-#basil run install AV stack: "bazel run :install_avstack --install_adp_maps"
+basil run install AV stack install maps: "bazel run :install_avstack --install_adp_maps"
 basil run get calibration file: "bazel run //config:get_calibration_file -- --vehicle_id="
 basil run install maps: "bazel run :install_maps --install_map=us-nv-las-vegas-strip"
 basil run install config: "bazel run :install_config"
 basil run pip update: "bazel run //:pip_deps.update"
 basil run log player: "bazel run //autonomy_tools/logplayer/logplayer-gui:logplayer-gui -- -p "
 basil run generate test data: "bazel run //infrastructure/messages/test:generate_test_data"
+basil run compile commands: "bazel run //:compile_commands"
+
+# fix GlobalProtect VPN, make it stop opening Slack and open Chrome instead
+set default browser: "xdg-settings get default-web-browser; xdg-settings set default-web-browser google-chrome.desktop"
+
 run autonomy process plan zero: "~/sh/run_autonomy_process_plan_zero.sh"
 run autonomy process prediction: "~/sh/run_autonomy_process_prediction.sh"
 data exp dear: "/data/exp/momchil.tomov/"
@@ -90,7 +95,7 @@ sudo: "sudo "
 sudo renice: "sudo renice -n -10 -p "
 es cancel: "scancel "
 es account: "sacct\n"
-jupiter notebook: "jupyter notebook\n"
+jupiter notebook: "jupyter notebook --port 8889"
 conan install: "conan install "
 nose tests: "nosetests "
 kill all dash nine: "killall -9 "
@@ -164,7 +169,13 @@ docker run: "docker run "
 docker P S: "docker ps -a"
 docker: "docker "
 docker run entrypoint bash: "docker run -it --entrypoint /bin/bash "
+sudo restart docker: "sudo systemctl restart docker"
+sudo service docker restart: "sudo service docker restart"
 new plan: "nuplan"
+
+run local simian: ". .envrc; ./simulation/applied/scripts/local/adp_start_host_build.sh"
+
+update drive logs credentials: "bazel run //:download_log -- -n foobar"
 
 drive logs download log: "drivelogs download_log -n "
 
@@ -198,6 +209,7 @@ sequel light: "sqlite3\n"
 
 trunk check: "./trunk check "
 trunk format: "./trunk fmt "
+trunk daemon shutdown: "./trunk daemon shutdown"
 
 tar compress: "tar -zcvf "
 tar decompress: "tar -zxvf "
@@ -211,6 +223,10 @@ launch A V test JS: "cd ~/avtest.js/out/build\n./run -d /data/exp/momchil-tomov/
 
 S C P from desktop: "scp momchil.tomov@10.17.6.51:"
 H top: "htop\n"
+
+dear: 
+    insert("dir()")
+    key(left)
 
 hugo server: "hugo server -D"
 hugo new site: "hugo new site "

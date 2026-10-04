@@ -29,3 +29,9 @@ continue debugging: key(f5)
 step over: key(f10)
 
 plan mode: key(shift-tab)
+
+
+# C++
+see out: "std::cout<<"
+end of line: "<<std::endl;"
+const auto: "const auto "

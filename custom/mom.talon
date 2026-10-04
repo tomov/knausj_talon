@@ -134,9 +134,7 @@ slap:
 #hammer krauss: "Krauss"
 I python: "IPython "
 #from: "from "
-dear: 
-    insert("dir()")
-    key(left)
+
 squares: 
     insert("[]")
     key(left)
@@ -188,7 +186,8 @@ simian: "simian"
 simian latest log: "simian-latest-log"
 simian logs: "simian-logs"
 setup simian: "setup_simian.sh"
-Prometheus: "Prometheus"
+
+woh zack: "WOSAC"
 
 rename:
     key(f2)
