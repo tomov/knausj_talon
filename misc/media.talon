@@ -5,3 +5,4 @@
 #[media] play next: key(next)
 #[media] play previous: key(prev)
 #media (play | pause): user.play_pause()
+
