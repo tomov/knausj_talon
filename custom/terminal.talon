@@ -12,13 +12,14 @@ and app: apple_terminal
 copy file: "cp "
 
 
-claude: "claude"
+#claude: "claude"
 claude resume: "claude --resume "
 claude YOLO: "claude --dangerously-skip-permissions"
 claude YOLO mode: "claude --dangerously-skip-permissions "
 claude YOLO resume: "claude --dangerously-skip-permissions --resume "
 claude docker container: "~/sh/run-av-stack-claude-docker.sh"
 claude auth status: "claude auth status"
+claude continue: "claude --continue "
 
 vim: "vim "
 them: "vim "
@@ -50,6 +51,7 @@ conda create: "conda create "
 conda remove: "conda remove "
 conda list: "conda list"
 conda env list: "conda env list"
+conda env remove: "conda env remove -n "
 
 
 open claw models status: "openclaw models status"
