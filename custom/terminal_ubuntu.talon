@@ -54,6 +54,7 @@ new plan: "nuplan"
 run local simian: ". .envrc; ./simulation/applied/scripts/local/adp_start_host_build.sh"
 
 update drive logs credentials: "bazel run //:download_log -- -n foobar"
+update claude credentials: "aws sso login --profile claude-code"
 
 drive logs download log: "drivelogs download_log -n "
 
