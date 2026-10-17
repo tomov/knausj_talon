@@ -27,6 +27,8 @@ exclamation mark: "!"
 horizontal split: ":sp "
 parentheses: "()"
 
+zeesh ar see: "~/.zshrc"
+
 pie: "py"
 eye python: "ipython\n"
 conda: "conda "
@@ -45,8 +47,6 @@ search everywhere:
     key(shift)
     key(shift)
 
-Colonel: "kernel"
-colonel: "kernel"
 square root:
     "sqrt()"
     key(left)
