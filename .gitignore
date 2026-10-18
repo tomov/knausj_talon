@@ -1,5 +1,7 @@
 # Dev stuff
 __pycache__
 *.sw?
+custom/secret.talon
+custom/private.talon
 # Locally generated
 /settings
