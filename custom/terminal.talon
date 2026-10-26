@@ -20,6 +20,7 @@ claude YOLO resume: "claude --dangerously-skip-permissions --resume "
 claude docker container: "~/sh/run-av-stack-claude-docker.sh"
 claude auth status: "claude auth status"
 claude continue: "claude --continue "
+rename session: "/rename "
 
 vim: "vim "
 them: "vim "
@@ -151,10 +152,6 @@ tar decompress: "tar -zxvf "
 unzip: "unzip "
 D F dash H: "df -h"
 H top: "htop\n"
-
-dear:
-    insert("dir()")
-    key(left)
 
 hugo server: "hugo server -D"
 hugo new site: "hugo new site "
