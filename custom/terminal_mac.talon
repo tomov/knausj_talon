@@ -34,7 +34,7 @@ eye python: "ipython\n"
 conda: "conda "
 mongo: "mongo"
 es share: "sshare -U\n"
-cat: "cat "
+#cat: "cat "
 fussy: "fasse"
 
 
