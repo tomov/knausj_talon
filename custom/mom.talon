@@ -179,9 +179,6 @@ G mail: "gmail"
 
 woh zack: "WOSAC"
 
-rename:
-    key(f2)
-
 
 include:
     insert('#include ""')
