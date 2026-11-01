@@ -7,6 +7,10 @@ pasta: key(ctrl-v)
 
 search:
     key(ctrl-f)
+
+rename:
+    key(f2)
+
 motional: "motional"
 
 simian: "simian"
