@@ -7,6 +7,11 @@ pasta: key(cmd-v)
 
 search:
     key(cmd-f)
+
+# rename the file selected in Finder
+rename:
+    key(enter)
+
 #insert_wait = 0
 #    key_wait = 20
 #
